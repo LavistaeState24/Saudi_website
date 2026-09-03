@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root{
+    --pine-950:#0E2A1C;
+    --pine-800:#153A26;
+    --pine-700:#1F5C3C;
+    --pine-500:#2F8F5B;
+    --pine-100:#E4EFE7;
+    --sand-600:#B9853A;
+    --sand-500:#CB9A4E;
+    --sand-100:#F4E9D8;
+    --paper:#F5F6F1;
+    --ink:#16201B;
+    --ink-soft:#4B564E;
+    --line:#DDE3DC;
+  }
+
+  html{scroll-behavior:smooth;}
+
+  body{
+    background-color:var(--paper);
+    color:var(--ink);
+    font-family:'Inter',ui-sans-serif,system-ui,sans-serif;
+  }
+
+  .font-display{
+    font-family:'Fraunces',Georgia,'Times New Roman',serif;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   Custom, non-utility styles \u2014 greenhouse motifs, accessibility
+   and the two deliberate motion moments used on the site.
+   Kept in this single file so there is only one stylesheet to ship.
+   ============================================================ */
+
+/* Glazing-bar motif: a faint grid echoing greenhouse structural bars.
+   Used sparingly as a section backdrop, never as decoration on every block. */
+.glaze-grid{
+  background-image:
+    linear-gradient(to right, rgba(31,92,60,0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(31,92,60,0.08) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+.glaze-grid-dark{
+  background-image:
+    linear-gradient(to right, rgba(244,233,216,0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(244,233,216,0.08) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+/* Row divider used for "crop-row" style lists instead of generic cards */
+.row-item{
+  border-top:1px solid var(--line);
+}
+.row-item:last-child{
+  border-bottom:1px solid var(--line);
+}
+
+/* Skip link for accessibility */
+.skip-link{
+  position:absolute;
+  left:-9999px;
+  top:0;
+  background:var(--pine-950);
+  color:#fff;
+  padding:0.6rem 1rem;
+  z-index:100;
+}
+.skip-link:focus{
+  left:0.5rem;
+  top:0.5rem;
+}
+
+/* Focus visibility */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible{
+  outline:2px solid var(--sand-500);
+  outline-offset:2px;
+}
+
+@media (prefers-reduced-motion: reduce){
+  *{
+    animation-duration:0.001ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:0.001ms !important;
+    scroll-behavior:auto !important;
+  }
+}
+
+/* Mobile nav panel transition (single deliberate motion, not per-card) */
+#mobileMenu{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height 0.35s ease;
+}
+#mobileMenu.open{
+  max-height:640px;
+}
+
+/* Hero entrance: one orchestrated reveal, not scattered per-section fades */
+.hero-reveal{
+  animation: heroIn 0.7s ease both;
+}
+@keyframes heroIn{
+  from{opacity:0; transform:translateY(10px);}
+  to{opacity:1; transform:translateY(0);}
+}
