@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap'); 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
 @layer base {
+
   :root{
     --pine-950:#0E2A1C;
     --pine-800:#153A26;
