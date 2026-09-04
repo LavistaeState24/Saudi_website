@@ -144,7 +144,7 @@ const FOOTER_HTML = `
       </div>
 
       <div>
-        <p class="text-sm font-semibold mb-3 text-white">Company</p>
+        <p class="text-xl font-semibold mb-3 text-white">Company</p>
         <ul class="space-y-2 text-sm text-[var(--sand-100)]/70">
           <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
           <li><a href="about.html#why-us" class="hover:text-white transition-colors">Why Choose Us</a></li>
@@ -154,7 +154,7 @@ const FOOTER_HTML = `
       </div>
 
       <div>
-        <p class="text-sm font-semibold mb-3 text-white">Products</p>
+        <p class="text-xl font-semibold mb-3 text-white">Products</p>
         <ul class="space-y-2 text-sm text-[var(--sand-100)]/70">
           <li><a href="products.html" class="hover:text-white transition-colors">All Products</a></li>
           <li><a href="products-plastic-shadenet-fiberglass.html" class="hover:text-white transition-colors">Plastic &amp; Shade-Net</a></li>
@@ -164,7 +164,7 @@ const FOOTER_HTML = `
       </div>
 
       <div>
-        <p class="text-sm font-semibold mb-3 text-white">Materials &amp; Services</p>
+        <p class="text-xl font-semibold mb-3 text-white">Materials &amp; Services</p>
         <ul class="space-y-2 text-sm text-[var(--sand-100)]/70">
           <li><a href="materials.html" class="hover:text-white transition-colors">Materials &amp; Systems</a></li>
           <li><a href="services.html" class="hover:text-white transition-colors">Services Overview</a></li>
@@ -174,18 +174,18 @@ const FOOTER_HTML = `
       </div>
 
       <div>
-        <p class="text-sm font-semibold mb-3 text-white">Contact</p>
+        <p class="text-xl font-semibold mb-3 text-white">Contact</p>
         <ul class="space-y-2 text-sm text-[var(--sand-100)]/70">
           <li><a href="tel:+966500000000" class="hover:text-white transition-colors">+966 50 000 0000</a></li>
           <li><a href="mailto:info@basateengreenhouses.sa" class="hover:text-white transition-colors">info@basateengreenhouses.sa</a></li>
           <li>Al-Kharj &amp; Qassim, Saudi Arabia</li>
-          <li><a href="contact.html" class="hover:text-white transition-colors">Get a Quote &rarr;</a></li>
+          <li><a href="contact.html" class="hover:text-white transition-colors">Contact Us</a></li>
         </ul>
       </div>
     </div>
 
     <div class="pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-[var(--sand-100)]/60">
-      <p>&copy; <span id="year"></span> Basateen Greenhouse Group. All rights reserved. (Demo content for design purposes.)</p>
+      <p>&copy; <span id="year"></span>  Lavista Marketing. All rights reserved.</p>
       <div class="flex items-center gap-5">
         <a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a>
         <a href="terms-conditions.html" class="hover:text-white transition-colors">Terms &amp; Conditions</a>
